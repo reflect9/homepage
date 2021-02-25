@@ -1,0 +1,65 @@
+body {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  color: #222;
+}
+.container {
+  overflow-x: hidden;
+  box-sizing: content-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container .left-panel {
+  flex: 0 0 240px;
+  padding: 40px;
+}
+.container .left-panel .title {
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+.container .left-panel .title .fullname {
+  font-weight: 500;
+}
+.container .left-panel .nav {
+  padding-bottom: 20px;
+}
+.container .left-panel .nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container .left-panel .nav ul li {
+  list-style: none;
+  padding-bottom: 24px;
+}
+.container .left-panel .nav ul li a {
+  font-size: 16px;
+}
+.container .left-panel .profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: -80px;
+}
+.container .mid-panel {
+  flex: 1 1 0;
+  padding: 44px 40px 40px 0;
+}
+.container .mid-panel .introduction {
+  font-size: 14px;
+  line-height: 2em;
+}
+.container .mid-panel .introduction a {
+  color: #888;
+}
