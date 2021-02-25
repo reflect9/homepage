@@ -13,6 +13,9 @@ a {
 a:hover {
   color: #222;
 }
+.fixed {
+  position: fixed;
+}
 .container {
   overflow-x: hidden;
   box-sizing: content-box;
@@ -57,9 +60,34 @@ a:hover {
   padding: 44px 40px 40px 0;
 }
 .container .mid-panel .introduction {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 2em;
 }
 .container .mid-panel .introduction a {
   color: #888;
+}
+.container .mid-panel .section {
+  padding-top: 30px;
+}
+.container .mid-panel .section .title {
+  font-size: 21px;
+  color: #444;
+}
+.container .mid-panel .section ul {
+  margin: 0;
+  padding: 0;
+}
+.container .mid-panel .section ul li {
+  margin-top: 12px;
+  list-style: none;
+  font-size: 14px;
+}
+.container .mid-panel .section ul li .date {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #aaa;
+}
+.container .mid-panel .section ul li .description {
+  display: inline-block;
 }
