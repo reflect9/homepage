@@ -44,7 +44,7 @@ a:hover {
 }
 .container .left-panel .nav ul li {
   list-style: none;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
 }
 .container .left-panel .nav ul li a {
   font-size: 16px;
@@ -57,14 +57,15 @@ a:hover {
 }
 .container .mid-panel {
   flex: 1 1 0;
-  padding: 44px 40px 40px 0;
+  padding: 44px 100px 40px 0;
 }
 .container .mid-panel .introduction {
   font-size: 15px;
   line-height: 2em;
 }
 .container .mid-panel .introduction a {
-  color: #888;
+  color: #2197ce;
+  font-weight: 500;
 }
 .container .mid-panel .section {
   padding-top: 30px;
@@ -72,13 +73,18 @@ a:hover {
 .container .mid-panel .section .title {
   font-size: 21px;
   color: #444;
+  margin-bottom: 8px;
+}
+.container .mid-panel .section .content {
+  font-size: 14px;
+  line-height: 1.8em;
 }
 .container .mid-panel .section ul {
   margin: 0;
   padding: 0;
 }
 .container .mid-panel .section ul li {
-  margin-top: 12px;
+  margin-top: 16px;
   list-style: none;
   font-size: 14px;
 }
@@ -90,4 +96,44 @@ a:hover {
 }
 .container .mid-panel .section ul li .description {
   display: inline-block;
+}
+.container .mid-panel .section ul.with-bullets {
+  margin: 16px;
+  padding: 0;
+}
+.container .mid-panel .section ul.with-bullets li {
+  list-style-type: circle;
+}
+.container .publications .bib-item .title {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #555;
+}
+.container .publications .bib-item .tag {
+  display: inline-block;
+  border-radius: 4px;
+  vertical-align: top;
+  border: 1px solid #2197ce;
+  color: #2197ce;
+  font-size: 10px;
+  margin-left: 8px;
+  padding: 1px 3px;
+}
+.container .publications .bib-item .authors {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  color: #222;
+}
+.container .publications .bib-item .authors em {
+  font-style: normal;
+  font-weight: 500;
+}
+.container .publications .bib-item .description {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: italic;
+  color: #222;
 }

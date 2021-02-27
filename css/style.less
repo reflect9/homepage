@@ -1,3 +1,4 @@
+@myBlue: rgb(33, 151, 206);
 body {
     font-size:12px;
     // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
@@ -45,7 +46,7 @@ a:hover {
                 list-style:none;
                 li{
                     list-style:none;
-                    padding-bottom:24px;
+                    padding-bottom:16px;
                     a{
                         font-size:16px;
                     }
@@ -64,24 +65,32 @@ a:hover {
         // width:400px;
         flex: 1 1 0;
         // border:1px solid #0f0;
-        padding:44px 40px 40px 0;
+        padding:44px 100px 40px 0;
         .introduction {
             // margin-right:100px;
             // border:1px solid #f00;
             font-size:15px;
             line-height: 2.0em;
-            a {color:#888;}
+            a {
+                color:@myBlue;
+                font-weight:500;
+            }
         }
         .section {
             padding-top:30px;
             .title { 
                 font-size:21px;
                 color:#444;
+                margin-bottom:8px;
+            }
+            .content {
+                font-size:14px;
+                line-height: 1.8em;
             }
             ul{
                 margin:0; padding:0;
                 li{
-                    margin-top:12px;
+                    margin-top:16px;
                     list-style: none;
                     font-size:14px;
                     .date{
@@ -96,8 +105,53 @@ a:hover {
                     }
                 }
             }
+            ul.with-bullets {
+                margin:16px; padding:0;
+                li {
+                    list-style-type:circle;
+                }
+            }
             
         }
     }
+
+    .publications {
+        .bib-item {
+            .title{
+                display:inline-block;
+                font-size:16px;
+                font-weight:700;
+                color:#555;
+            }
+            .tag {
+                display:inline-block;
+                border-radius:4px; 
+                vertical-align: top;
+                border:1px solid @myBlue;
+                color:@myBlue;
+                font-size:10px;
+                margin-left:8px;
+                padding:1px 3px;
+            }
+            .authors{
+                display:block;
+                font-weight:300;
+                font-size:12px;
+                color:#222;
+                em {
+                    font-style:normal;
+                    font-weight:500;
+                }
+            }
+            .description{
+                display:block;
+                font-weight:300;
+                font-size:12px;
+                font-style:italic;
+                color:#222;
+            }
+        }
+    }
+
 }
 
