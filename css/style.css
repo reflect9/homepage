@@ -57,15 +57,18 @@ a:hover {
 }
 .container .mid-panel {
   flex: 1 1 0;
-  padding: 44px 100px 40px 0;
+  padding: 104px 100px 40px 0;
 }
 .container .mid-panel .introduction {
-  font-size: 15px;
-  line-height: 2em;
+  font-size: 14px;
+  line-height: 1.7em;
 }
 .container .mid-panel .introduction a {
   color: #2197ce;
   font-weight: 500;
+}
+.container .mid-panel .section:first-child {
+  padding-top: 0;
 }
 .container .mid-panel .section {
   padding-top: 30px;
@@ -78,6 +81,10 @@ a:hover {
 .container .mid-panel .section .content {
   font-size: 14px;
   line-height: 1.8em;
+}
+.container .mid-panel .section .content a {
+  color: #2197ce;
+  font-weight: 500;
 }
 .container .mid-panel .section ul {
   margin: 0;
@@ -136,4 +143,68 @@ a:hover {
   font-size: 12px;
   font-style: italic;
   color: #222;
+}
+.container .project_container .project {
+  position: relative;
+  float: left;
+  width: 500px;
+  height: 120px;
+  padding: 5px;
+  margin: 0px 35px 20px 0px;
+  background-color: #fff;
+}
+.container .project_container .project .pr_image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container .project_container .project .pr_desc {
+  position: absolute;
+  top: -3px;
+  left: 212px;
+  right: 0px;
+  padding: 0px;
+  background-color: #fff;
+  color: #000;
+  z-index: 5;
+}
+.container .project_container .project .pr_title {
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 450;
+  cursor: pointer;
+}
+.container .project_container .project .pr_title a {
+  text-decoration: none;
+  color: inherit;
+}
+.container .project_container .project .pr_title .pr_date {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
+.container .project_container .project .pr_subtitle {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+.container .project_container .project .pr_attachments {
+  margin-top: 6px;
+}
+.container .project_container .project .pr_attachments a {
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 2px 5px 2px 5px;
+  background-color: #bbb;
+  border-radius: 2px;
 }

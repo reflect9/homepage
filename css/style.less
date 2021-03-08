@@ -65,16 +65,19 @@ a:hover {
         // width:400px;
         flex: 1 1 0;
         // border:1px solid #0f0;
-        padding:44px 100px 40px 0;
+        padding:104px 100px 40px 0;
         .introduction {
             // margin-right:100px;
             // border:1px solid #f00;
-            font-size:15px;
-            line-height: 2.0em;
+            font-size:14px;
+            line-height: 1.7em;
             a {
                 color:@myBlue;
                 font-weight:500;
             }
+        }
+        .section:first-child{
+            padding-top:0;
         }
         .section {
             padding-top:30px;
@@ -86,6 +89,10 @@ a:hover {
             .content {
                 font-size:14px;
                 line-height: 1.8em;
+                a { 
+                    color:@myBlue;
+                    font-weight:500;
+                }
             }
             ul{
                 margin:0; padding:0;
@@ -151,6 +158,74 @@ a:hover {
                 color:#222;
             }
         }
+    }
+    .project_container {
+        .project {
+            position: relative;
+            float: left;
+            width: 500px;
+            height: 120px;
+            padding: 5px;
+            margin: 0px 35px 20px 0px;
+            background-color: #fff;
+            .pr_image {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 200px;
+                height: 130px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .pr_desc {
+                position: absolute;
+                top: -3px;
+                left: 212px;
+                right: 0px;
+                padding: 0px;
+                background-color: #fff;
+                color: #000;
+                z-index: 5;
+            }            
+            .pr_title {
+                margin: 0px;
+                font-size: 17px;
+                font-weight: 450;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+                .pr_date {
+                    margin-left: 8px;
+                    font-size: 12px;
+                    font-weight: 300;
+                    font-style: italic;
+                }
+            }
+            .pr_subtitle {
+                margin-top: 2px;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.6em;
+            }
+            .pr_attachments {
+                margin-top: 6px;
+                a {
+                    margin-right: 5px;
+                    font-size: 10px;
+                    font-weight: 500;
+                    color: #fff;
+                    text-transform: uppercase;
+                    padding: 2px 5px 2px 5px;
+                    background-color: #bbb;
+                    border-radius: 2px;
+                }
+            }
+
+        }
+        
     }
 
 }
