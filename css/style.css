@@ -13,9 +13,6 @@ a {
 a:hover {
   color: #222;
 }
-.fixed {
-  position: fixed;
-}
 .container {
   overflow-x: hidden;
   box-sizing: content-box;
@@ -26,30 +23,31 @@ a:hover {
 .container .left-panel {
   flex: 0 0 240px;
   padding: 40px;
+  box-sizing: border-box;
 }
-.container .left-panel .title {
+.container .left-panel .left-panel-inner .title {
   font-size: 25px;
   padding-bottom: 40px;
 }
-.container .left-panel .title .fullname {
+.container .left-panel .left-panel-inner .title .fullname {
   font-weight: 500;
 }
-.container .left-panel .nav {
+.container .left-panel .left-panel-inner .nav {
   padding-bottom: 20px;
 }
-.container .left-panel .nav ul {
+.container .left-panel .left-panel-inner .nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.container .left-panel .nav ul li {
+.container .left-panel .left-panel-inner .nav ul li {
   list-style: none;
   padding-bottom: 16px;
 }
-.container .left-panel .nav ul li a {
+.container .left-panel .left-panel-inner .nav ul li a {
   font-size: 16px;
 }
-.container .left-panel .profile img {
+.container .left-panel .left-panel-inner .profile img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -57,6 +55,7 @@ a:hover {
 }
 .container .mid-panel {
   flex: 1 1 0;
+  box-sizing: border-box;
   padding: 104px 100px 40px 0;
 }
 .container .mid-panel .introduction {
@@ -117,13 +116,14 @@ a:hover {
   font-weight: 700;
   color: #555;
 }
-.container .publications .bib-item .tag {
+.container .publications .bib-item .title .tag {
   display: inline-block;
   border-radius: 4px;
-  vertical-align: top;
+  vertical-align: middle;
   border: 1px solid #2197ce;
   color: #2197ce;
   font-size: 10px;
+  font-weight: 400;
   margin-left: 8px;
   padding: 1px 3px;
 }
@@ -148,15 +148,16 @@ a:hover {
   position: relative;
   float: left;
   width: 500px;
-  height: 120px;
+  max-width: 100%;
+  height: auto;
   padding: 5px;
   margin: 0px 35px 20px 0px;
   background-color: #fff;
+  display: flex;
+  flex-direction: row;
 }
 .container .project_container .project .pr_image {
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  flex: 0 0 200px;
   width: 200px;
   height: 130px;
   background-repeat: no-repeat;
@@ -164,11 +165,8 @@ a:hover {
   background-size: cover;
 }
 .container .project_container .project .pr_desc {
-  position: absolute;
-  top: -3px;
-  left: 212px;
-  right: 0px;
-  padding: 0px;
+  flex: 1 1 auto;
+  padding: 0 0 0 16px;
   background-color: #fff;
   color: #000;
   z-index: 5;
@@ -207,4 +205,40 @@ a:hover {
   padding: 2px 5px 2px 5px;
   background-color: #bbb;
   border-radius: 2px;
+}
+iframe.googleCalendar {
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  max-width: 800px;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    display: block;
+    flex: none;
+  }
+  .container .left-panel {
+    display: block;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .container .left-panel div.nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .container .left-panel .profile {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  .container .left-panel .profile img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .container .mid-panel {
+    display: block;
+    width: 100%;
+    padding: 0px 100px 40px 40px;
+  }
 }
